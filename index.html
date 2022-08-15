@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./resset.css">
+    <link rel="icon" href="./img/hamburger.png">
+    <title>Driven Eats</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="titulo">
+                <p>DrivenEats</p>
+                <p>Sua comida em 6 minutos</p>
+            </div>
+        </div>
+        <div class="conteudo">
+            <p class="titulo-categoria">Primeiro, seu prato</p>
+            <div class="cardapio-prato">
+                <div class="frango" onclick="selecionarprato('frango')">
+                    <img src="./img/prato 1 frango_yin_yang.png" alt="prato-frango">
+                    <p class="titulo-item"><strong>Frango Yin Yang</strong></p>
+                    <p class="descricao">Um pouco de batata, um pouco de salada</p>    
+                    <p class="preco">R$ 14,90</p>
+                    <div class="icone escondido">
+                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="tambaqui" onclick="selecionarprato('tambaqui')">
+                    <img src="./img/prato 2 costela de tambaqui.PNG" alt="prato-tambaqui">
+                    <p class="titulo-item"><strong>Costela de tambaqui</strong></p>
+                    <p class="descricao">Melhor peixe, melhor prato</p>  
+                    <p class="preco">R$ 20,90</p>
+                    <div class="icone escondido">
+                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="picanha" onclick="selecionarprato('picanha')">
+                    <img src="./img/prato 3 picanha.PNG" alt="prato-picanha">
+                    <p class="titulo-item"><strong>Picanha</strong></p>
+                    <p class="descricao">Picanha (pede a costela)</p>    
+                    <p class="preco">R$ 30,90</p>
+                    <div class="icone escondido">
+                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <p class="titulo-categoria">Agora, sua bebida</p>
+            <div class="cardapio-bebida">
+                <div class="coca" onclick="selecionarbebida('coca')">
+                    <img src="./img/bebida 1 coquinha_gelada.png" alt="bebida-coca">
+                    <p class="titulo-item"><strong>Coquinha gelada</strong></p>
+                    <p class="descricao">Lata de coca gelada, 350ml</p>
+                    <p class="preco">R$ 4,90</p>
+                    <div class="icone escondido">
+                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    </div>                    
+                </div>
+                <div class="bare" onclick="selecionarbebida('bare')">
+                    <img src="./img/bebida 2 bare.PNG" alt="bebida-bare">
+                    <p class="titulo-item"><strong>Baré da terra</strong></p>
+                    <p class="descricao">Lata de baré gelado, 350ml (melhor refri)</p>
+                    <p class="preco">R$ 5,90</p>
+                    <div class="icone escondido">
+                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    </div>                     
+                </div>
+                <div class="fanta" onclick="selecionarbebida('fanta')">
+                    <img src="./img/bebida 3 fanta.PNG" alt="bebida-fanta">
+                    <p class="titulo-item"><strong>Fanta gelada</strong></p>
+                    <p class="descricao">Ainda dá tempo de pedir o baré</p>
+                    <p class="preco">R$ 6,90</p>
+                    <div class="icone escondido">
+                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    </div>                     
+                </div>
+            </div>
+            <p class="titulo-categoria">Por fim, sua sobremesa</p>
+            <div class="cardapio-sobremesa">
+                <div class="pudim" onclick="selecionarsobremesa('pudim')">
+                    <img src="./img/sobremesa 1 pudim.png" alt="sobremsa-pudim">
+                    <p class="titulo-item"><strong>Pudim</strong></p>
+                    <p class="descricao">Pudim legal</p>
+                    <p class="preco">R$ 7,90</p>
+                    <div class="icone escondido">
+                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="enroladinho" onclick="selecionarsobremesa('enroladinho')">
+                    <img src="./img/sobremesa 2 enroladinho de morango.PNG" alt="sobremsa-enroladinho">
+                    <p class="titulo-item"><strong>Enroladinho</strong></p>
+                    <p class="descricao">É legalzinho...</p>
+                    <p class="preco">R$ 8,90</p>
+                    <div class="icone escondido">
+                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="mouse" onclick="selecionarsobremesa('mouse')">
+                    <img src="./img/sobremesa 3 mouse de cupuaçu.PNG" alt="sobremsa-mouse">
+                    <p class="titulo-item"><strong>Mouse de cupuaçu</strong></p>
+                    <p class="descricao">Melhor sobremesa</p>
+                    <p class="preco">R$ 9,90</p>
+                    <div class="icone escondido">
+                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <button class="botao-confirmar" onclick="confirmarPedido()">Selecione os 3 itens para fechar o pedido</button>
+        </div>
+    </div>
+
+<script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>  
+<script src="./script.js"></script>
+</body>
+</html>
